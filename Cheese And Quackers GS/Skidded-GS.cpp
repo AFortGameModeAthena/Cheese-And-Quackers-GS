@@ -15,3 +15,10 @@ int main() {
 
     return 0;
 }
+
+#if WITH_SERVER_CODE
+
+    if( World->NetDriver )
+    {
+        return false;
+    }
